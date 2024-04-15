@@ -14,4 +14,6 @@ steps to follow for argocd
 10) default username : admin and password u can get from terminal 
 11) kubectl edit deployment argocd-server  ( to edit replicas available for HPA ) 
 12) To access argocd , go to kubectl get deployment and choose argocd-server 
-
+13) kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'   ( change argocd server to load balancer )
+14) kubectl port-forward svc/argocd-server -n argocd 8080:443  ( port forward and without exposing the service ) 
+15) argocd admin initial-password -n argocd ( generates random password )

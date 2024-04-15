@@ -1,0 +1,10 @@
+ArdoCD projects  
+
+steps to follow for argocd
+1) kubectl create ns argocd 
+2) kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+3) kubectl config set-context --current --namespace=argocd
+4) kubectl get pods
+5) kubectl get crds 
+6) kubectl get endpoints 
+7) 

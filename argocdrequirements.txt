@@ -7,4 +7,6 @@ steps to follow for argocd
 4) kubectl get pods
 5) kubectl get crds 
 6) kubectl get endpoints 
-7) 
+7) kubectl get service 
+8) kubectl edit service argocd-server
+
